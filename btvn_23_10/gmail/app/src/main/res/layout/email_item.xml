@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/avatarImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/img" />
+
+
+    <TextView
+        android:id="@+id/senderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/avatarImageView"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Sender Name" />
+
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/senderTextView"
+        android:textSize="12sp"
+        android:text="11:22 AM" />
+
+
+    <TextView
+        android:id="@+id/subjectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/senderTextView"
+        android:layout_toEndOf="@id/avatarImageView"
+        android:textSize="14sp"
+        android:text="Email Subject"
+        android:textColor="#757575" />
+
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subjectTextView"
+        android:layout_toEndOf="@id/avatarImageView"
+        android:textSize="12sp"
+        android:text="Email preview text goes here"
+        android:textColor="#BDBDBD" />
+
+
+    <ImageView
+        android:id="@+id/starImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/timeTextView"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_star_border" />
+</RelativeLayout>
